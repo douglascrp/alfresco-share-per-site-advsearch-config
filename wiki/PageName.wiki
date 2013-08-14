@@ -20,16 +20,13 @@ In share-custom-config.xml
 			<!-- Forms for the advanced search type list -->
 			<forms>
 				<!-- Shows type only on sites "siteA" and "siteB" -->
-				<form label="Type A" description="Type A Search" *bold*sites="siteA,siteB"*bold*>sam:typeA</form>
+				<form label="Type A" description="Search for Type A" *sites="siteA,siteB"*>sam:typeA</form>
 				<!-- Shows type on "ANY" site -->
-				<form label="Documentos" description="Pesquisa de Documentos" sites="ANY">cm:document</form>
+				<form label="Documents" description="Search for Documents" *sites="ANY"*>cm:document</form>
 				<!-- Shows type on user dashboard only -->
-				<form label="Pastas" description="Pesquisa de Pastas">cm:folder</form>
+				<form label="Folders" description="Search for Folders">cm:folder</form>
 			</forms>
 		</advanced-search>
 	</config>
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+In *sites* tag, you have to set the sites' ids

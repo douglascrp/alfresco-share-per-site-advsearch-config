@@ -27,6 +27,6 @@ In share-custom-config.xml
 				`<form label="Folders" description="Search for Folders">`cm:folder`</form>`
 			`</forms>`
 		`</advanced-search>`
-	</config>
+	`</config>`
 
 In *sites* tag, you have to set the sites' ids

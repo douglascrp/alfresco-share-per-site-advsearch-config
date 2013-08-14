@@ -14,19 +14,20 @@ In "Customer A Site", you will be able to show only the types you want, like "Cu
 After you deploy the addon, you will be able to use something like this:
 
 In share-custom-config.xml
-
-`<config replace="true" evaluator="string-compare" condition="AdvancedSearch">`<br>
-        `<advanced-search>`<br>
-                `<!-- Forms for the advanced search type list -->`<br>
-                `<forms>`<br>
-                        `<!-- Shows type only on sites "siteA" and "siteB" -->`<br>
-                        `<form label="Type A" description="Search for Type A" *sites="siteA,siteB"*>`sam:typeA`</form>`<br>
-                        `<!-- Shows type on "ANY" site -->`<br>
-                        `<form label="Documents" description="Search for Documents" *sites="ANY"*>`cm:document`</form>`<br>
-                        `<!-- Shows type on user dashboard only -->`<br>
-                        `<form label="Folders" description="Search for Folders">`cm:folder`</form>`<br>
-                `</forms>`<br>
-        `</advanced-search>`<br>
-`</config>`
+<code language="xml">
+<config replace="true" evaluator="string-compare" condition="AdvancedSearch">
+        <advanced-search>
+                <!-- Forms for the advanced search type list -->
+                <forms>
+                        <!-- Shows type only on sites "siteA" and "siteB" -->
+                        <form label="Type A" description="Search for Type A" *sites="siteA,siteB"*>sam:typeA</form>
+                        <!-- Shows type on "ANY" site -->
+                        <form label="Documents" description="Search for Documents" *sites="ANY"*>cm:document</form>
+                        <!-- Shows type on user dashboard only -->
+                        <form label="Folders" description="Search for Folders">cm:folder</form>
+                </forms>
+        </advanced-search>
+</config>
+</code>
 
 In *sites* tag, you have to set the sites' ids

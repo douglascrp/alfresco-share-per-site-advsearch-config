@@ -20,9 +20,9 @@ In share-custom-config.xml
                 `<!-- Forms for the advanced search type list -->`<br>
                 `<forms>`<br>
                         `<!-- Shows type only on sites "siteA" and "siteB" -->`<br>
-                        `<form label="Type A" description="Search for Type A" *sites="siteA,siteB"*>`sam:typeA`</form>`<br>
+                        `<form label="Type A" description="Search for Type A" sites="siteA,siteB">`sam:typeA`</form>`<br>
                         `<!-- Shows type on "ANY" site -->`<br>
-                        `<form label="Documents" description="Search for Documents" *sites="ANY"*>`cm:document`</form>`<br>
+                        `<form label="Documents" description="Search for Documents" sites="ANY">`cm:document`</form>`<br>
                         `<!-- Shows type on user dashboard only -->`<br>
                         `<form label="Folders" description="Search for Folders">`cm:folder`</form>`<br>
                 `</forms>`<br>

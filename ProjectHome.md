@@ -1,0 +1,1 @@
+Allows specific advanced search config per Alfresco Share Site
